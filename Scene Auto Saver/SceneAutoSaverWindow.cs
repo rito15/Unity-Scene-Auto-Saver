@@ -9,7 +9,7 @@ using UnityEditor;
 // 날짜 : 2021-03-08 AM 1:38:56
 // 작성자 : Rito
 
-namespace Rito.EditorPlugins
+namespace Rito.EditorUtilities
 {
     public class SceneAutoSaverWindow : EditorWindow
     {

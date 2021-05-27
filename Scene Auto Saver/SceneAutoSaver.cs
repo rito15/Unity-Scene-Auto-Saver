@@ -12,7 +12,7 @@ using UnityEditor.SceneManagement;
 // 날짜 : 2021-03-08 AM 1:12:05
 // 작성자 : Rito
 
-namespace Rito.EditorPlugins
+namespace Rito.EditorUtilities
 {
     /// <summary> 주기적으로 현재 씬 자동 저장 </summary>
     [InitializeOnLoad]
@@ -70,8 +70,8 @@ namespace Rito.EditorPlugins
 
         private static void LoadOptions()
         {
-            Activated = PlayerPrefs.GetInt(Prefix + nameof(Activated), DefaultActivated ? 1 : 0) == 1 ? true : false;
-            ShowLog   = PlayerPrefs.GetInt(Prefix + nameof(ShowLog), DefaultShowLog ? 1 : 0) == 1 ? true : false;
+            Activated = PlayerPrefs.GetInt(Prefix + nameof(Activated), DefaultActivated ? 1 : 0) == 1;
+            ShowLog   = PlayerPrefs.GetInt(Prefix + nameof(ShowLog), DefaultShowLog ? 1 : 0) == 1;
             SaveCycle = PlayerPrefs.GetFloat(Prefix + nameof(SaveCycle), DefaultSaveCycle);
 
             // 소수점 두자리 컷
