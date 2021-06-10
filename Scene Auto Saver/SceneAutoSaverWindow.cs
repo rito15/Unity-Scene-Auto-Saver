@@ -38,7 +38,7 @@ namespace Rito.EditorUtilities
 
             SceneAutoSaver.Activated = EditorGUILayout.Toggle("On", SceneAutoSaver.Activated);
             SceneAutoSaver.ShowLog = EditorGUILayout.Toggle("Show Log", SceneAutoSaver.ShowLog);
-            SceneAutoSaver.SaveCycle = EditorGUILayout.DoubleField("Save Cycle (sec)", SceneAutoSaver.SaveCycle);
+            SceneAutoSaver.SaveInterval = EditorGUILayout.DoubleField("Save Interval (sec)", SceneAutoSaver.SaveInterval);
 
             // ============================================================================ Logs ==
             GUILayout.Space(10f);
